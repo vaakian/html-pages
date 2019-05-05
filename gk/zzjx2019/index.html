@@ -88,7 +88,7 @@ float:left;margin-top:5px; margin-right:20px;margin-left:13px;list-style:none;fo
     	return score;
     }
     function LoginSuccess() {
-    	var score = createScore($('#zjhm').val(), $('#ksbh').val(),{yz:randomNum(135, 150),yh:randomNum(331, 340)})
+    	var score = createScore($('#zjhm').val(), $('#ksbh').val(),{yz:randomNum(46, 50)*3,yh:randomNum(331, 340)})
     	$("#score").html("loading……正在提交请稍后。")
     	setTimeout(function(){
     		$("#score").html(score)

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" /> -->
+    <title>计算机技能高考驿站</title>
+    <link rel="stylesheet" href="./static/css/global.css">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <!-- 忽略电话号码 -->
+    <meta content="telephone=no" name="format-detection" />
+    <!-- 图表 -->
+    <link rel="apple-touch-icon-precomposed" href="http://q1.qlogo.cn/g?b=qq&nk=861729091&s=640" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      const mainUrl = "http://z-os.cn/api/"
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.1.0.rc2/echarts-en.simple.min.js"></script>
+  </body>
+ </html>
+<script>
+	itemPosition = ['(-104%)','(2%)', '(106%)', '(210%)','(314%)', '(418%)']
+	function sliderMove(way) {
+		var last = $('ul li:last');
+		var first = $('ul li:first');
+		if (way == -1) last.after(first); //way == -1时，向左移动
+		else first.before(last); //向右移动
+		for (var i = 0; i < 6; i++) {
+			$('ul li').eq(i).css(itemPosition[i])
+		}
+	}
+//Comic Sans MS
+</script>
